@@ -22,11 +22,12 @@ body {
 
 .check {
   background-image: url(../img/check.png);
-  width: 79px;
-  height: 79px;
+  background-size: cover;
+  width: 65px;
+  height: 65px;
   position: absolute;
   top: 40%;
-  left: 40%;
+  left: 42%;
   opacity: 0;
   -webkit-animation-name: check_appear; /* Safari 4.0 - 8.0 */
   -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
