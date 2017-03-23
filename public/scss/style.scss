@@ -36,8 +36,28 @@ body {
   animation-duration: 1s, 1s;
   animation: check_appear 1s forwards, dissappear 1s forwards;
   -webkit-animation: check_appear 1s forwards, dissappear 1s forwards;
-  -webkit-animation-delay: 4s, 6s; /* Safari 4.0 - 8.0 */
-  animation-delay: 4s, 6s;
+  -webkit-animation-delay: 3.5s, 6s; /* Safari 4.0 - 8.0 */
+  animation-delay: 3.5s, 6s;
+}
+
+.check-2 {
+  background-image: url(../img/check-mod.png);
+  background-size: cover;
+  width: 82px;
+  height: 82px;
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  opacity: 0;
+  z-index: 4;
+  -webkit-animation-name: check_appear, dissappear; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 1s, 1s; /* Safari 4.0 - 8.0 */
+  animation-name: check_appear, dissappear;
+  animation-duration: 1s, 1s;
+  animation: check_appear 1s forwards, dissappear 1s forwards;
+  -webkit-animation: check_appear 1s forwards, dissappear 1s forwards;
+  -webkit-animation-delay: 3s, 5s; /* Safari 4.0 - 8.0 */
+  animation-delay: 3s, 5s;
 }
 
 // Animación #1
@@ -53,11 +73,11 @@ body {
   margin: 0 auto;
   z-index: 1;
   -webkit-animation-name: gray_qr, dissappear; /* Safari 4.0 - 8.0 */
-  -webkit-animation-duration: 0.5s, 0.5s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 0.5s, 0.2s; /* Safari 4.0 - 8.0 */
   animation-name: gray_qr, dissappear;
-  animation-duration: 0.5s, 0.5s;
-  animation: gray_qr 0.5s forwards, dissappear 0.5s forwards;
-  -webkit-animation: gray_qr 0.5s forwards, dissappear 0.5s forwards;
+  animation-duration: 0.5s, 0.2s;
+  animation: gray_qr 0.5s forwards, dissappear 0.2s forwards;
+  -webkit-animation: gray_qr 0.5s forwards, dissappear 0.2s forwards;
   -webkit-animation-delay: 2.5s, 5s; /* Safari 4.0 - 8.0 */
   animation-delay: 2.5s, 5s;
 }
@@ -112,11 +132,11 @@ body {
   margin: 0 auto;
   z-index: 1;
   -webkit-animation-name: unblurry, dissappear; /* Safari 4.0 - 8.0 */
-  -webkit-animation-duration: 0.5s, 1s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 0.5s, 0.5s; /* Safari 4.0 - 8.0 */
   animation-name: unblurry, dissappear;
-  animation-duration: 0.5s, 1s;
-  animation: unblurry 0.5s forwards, dissappear 1s forwards;
-  -webkit-animation: unblurry 0.5s forwards, dissappear 1s forwards;
+  animation-duration: 0.5s, 0.5s;
+  animation: unblurry 0.5s forwards, dissappear 0.5s forwards;
+  -webkit-animation: unblurry 0.5s forwards, dissappear 0.5s forwards;
   -webkit-animation-delay: 2s, 4s; /* Safari 4.0 - 8.0 */
   animation-delay: 2s, 4s;
 }
@@ -129,12 +149,12 @@ body {
   position: absolute;
   top: 20px;
   right: -150px;
-  -webkit-animation-name: right_to_left, scan_ok, dissapear; /* Safari 4.0 - 8.0 */
-  -webkit-animation-duration: 2s, 1s, 1s; /* Safari 4.0 - 8.0 */
-  animation-name: right_to_left, scan_ok, dissappear;
-  animation-duration: 2s, 1s, 1s;
-  animation: right_to_left 2.0s forwards, scan_ok 1.0s forwards, dissappear 1s forwards ;
-  -webkit-animation: right_to_left 2.0s forwards, scan_ok 1.0s forwards, dissappear 1s forwards;
+  -webkit-animation-name: right_to_left, scan_ok, dissappear ; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 2s, 1s, 0.5s; /* Safari 4.0 - 8.0 */
+  animation-name: right_to_left, scan_ok, dissappear ;
+  animation-duration: 2s, 1s, 0.5s;
+  animation: right_to_left 2.0s forwards, scan_ok 1.0s forwards, dissappear 0.5s forwards ;
+  -webkit-animation: right_to_left 2.0s forwards, scan_ok 1.0s forwards, dissappear 0.5s forwards;
   -webkit-animation-delay: 0s, 2.2s, 4s; /* Safari 4.0 - 8.0 */
   animation-delay: 0s, 2.2s, 4s;
 }
