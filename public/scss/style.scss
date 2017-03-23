@@ -11,55 +11,6 @@ body {
   overflow-x: hidden;
 }
 
-.animation-wrapper-2 {
-  background-color: #FFF;
-  width: 400px;
-  height: 288px;
-  margin: 20px auto 0;
-  position: relative;
-  overflow-x: hidden;
-}
-
-.check {
-  background-image: url(../img/check-mod.png);
-  background-size: cover;
-  width: 82px;
-  height: 82px;
-  position: absolute;
-  top: 33%;
-  left: 40%;
-  opacity: 0;
-  z-index: 4;
-  -webkit-animation-name: check_appear, dissappear; /* Safari 4.0 - 8.0 */
-  -webkit-animation-duration: 1s, 1s; /* Safari 4.0 - 8.0 */
-  animation-name: check_appear, dissappear;
-  animation-duration: 1s, 1s;
-  animation: check_appear 1s forwards, dissappear 1s forwards;
-  -webkit-animation: check_appear 1s forwards, dissappear 1s forwards;
-  -webkit-animation-delay: 3.5s, 6s; /* Safari 4.0 - 8.0 */
-  animation-delay: 3.5s, 6s;
-}
-
-.check-2 {
-  background-image: url(../img/check-mod.png);
-  background-size: cover;
-  width: 82px;
-  height: 82px;
-  position: absolute;
-  top: 30%;
-  left: 40%;
-  opacity: 0;
-  z-index: 4;
-  -webkit-animation-name: check_appear, dissappear; /* Safari 4.0 - 8.0 */
-  -webkit-animation-duration: 1s, 1s; /* Safari 4.0 - 8.0 */
-  animation-name: check_appear, dissappear;
-  animation-duration: 1s, 1s;
-  animation: check_appear 1s forwards, dissappear 1s forwards;
-  -webkit-animation: check_appear 1s forwards, dissappear 1s forwards;
-  -webkit-animation-delay: 3s, 5s; /* Safari 4.0 - 8.0 */
-  animation-delay: 3s, 5s;
-}
-
 // Animación #1
 
 .gray-card {
@@ -72,14 +23,9 @@ body {
   right: 0;
   margin: 0 auto;
   z-index: 1;
-  -webkit-animation-name: gray_qr, dissappear; /* Safari 4.0 - 8.0 */
-  -webkit-animation-duration: 0.5s, 0.2s; /* Safari 4.0 - 8.0 */
-  animation-name: gray_qr, dissappear;
-  animation-duration: 0.5s, 0.2s;
-  animation: gray_qr 0.5s forwards, dissappear 0.2s forwards;
-  -webkit-animation: gray_qr 0.5s forwards, dissappear 0.2s forwards;
-  -webkit-animation-delay: 2.5s, 5s; /* Safari 4.0 - 8.0 */
-  animation-delay: 2.5s, 5s;
+  -webkit-animation-name: anim_1_gray_card;
+  -webkit-animation-duration: 6000ms;
+  -webkit-animation-iteration-count: infinite;
 }
 
 .orange-phone {
@@ -90,36 +36,37 @@ body {
   left: -150px;
   z-index: 2;
   top: 0;
-  -webkit-animation-name: left_to_right, focus, orange_scan_ok, dissappear; /* Safari 4.0 - 8.0 */
-  -webkit-animation-duration: 2s, 1s, 0.5s, 1s; /* Safari 4.0 - 8.0 */
-  animation-name: left_to_right, focus, orange_scan_ok, dissappear;
-  animation-duration: 2s, 1s, 0.5s, 1s;
-  animation: unblurry 2s forwards, focus 1s forwards, orange_scan_ok 0.5s forwards, dissappear 1s forwards;
-  -webkit-animation: left_to_right 2s forwards, focus 1s forwards, orange_scan_ok 0.5s forwards, dissappear 1s forwards;
-  -webkit-animation-delay: 0s, 2s, 3s, 5s; /* Safari 4.0 - 8.0 */
-  animation-delay: 0s, 2s, 3s, 5s;
+  -webkit-animation-name: anim_1_orange_phone;
+  -webkit-animation-duration: 6000ms;
+  -webkit-animation-iteration-count: infinite;
 }
 
-.orange-phone-check {
-  background-image: url(../img/other/orange-phone-check.png);
-  width: 150px;
-  height: 248px;
+.check {
+  background-image: url(../img/check-mod.png);
+  background-size: cover;
+  width: 82px;
+  height: 82px;
   position: absolute;
-  left: 126px;
-  z-index: 3;
-  top: 42px;
+  top: 33%;
+  left: 40%;
   opacity: 0;
-  -webkit-animation-name: orange_phone_check, dissappear; /* Safari 4.0 - 8.0 */
-  -webkit-animation-duration: 0.5s, 0.5s; /* Safari 4.0 - 8.0 */
-  animation-name: orange_phone_check, dissappear;
-  animation-duration: 0.5s, 0.5s;
-  animation: orange_phone_check 0.5s forwards, dissappear 0.5s forwards;
-  -webkit-animation: orange_phone_check 0.5s forwards, dissappear 0.5s forwards;
-  -webkit-animation-delay: 4s, 5s; /* Safari 4.0 - 8.0 */
-  animation-delay: 4s, 5s;
+  z-index: 4;
+  -webkit-animation-name: anim_1_check;
+  -webkit-animation-duration: 6000ms;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-delay: 3s;
 }
 
 // Animación #2
+
+.animation-wrapper-2 {
+  background-color: #FFF;
+  width: 400px;
+  height: 288px;
+  margin: 20px auto 0;
+  position: relative;
+  overflow-x: hidden;
+}
 
 .orange-phone-2 {
   background-image: url(../img/anim-blurry.png);
@@ -131,14 +78,9 @@ body {
   right: 0;
   margin: 0 auto;
   z-index: 1;
-  -webkit-animation-name: unblurry, dissappear; /* Safari 4.0 - 8.0 */
-  -webkit-animation-duration: 0.5s, 0.5s; /* Safari 4.0 - 8.0 */
-  animation-name: unblurry, dissappear;
-  animation-duration: 0.5s, 0.5s;
-  animation: unblurry 0.5s forwards, dissappear 0.5s forwards;
-  -webkit-animation: unblurry 0.5s forwards, dissappear 0.5s forwards;
-  -webkit-animation-delay: 2s, 4s; /* Safari 4.0 - 8.0 */
-  animation-delay: 2s, 4s;
+  -webkit-animation-name: anim_2_orange_phone;
+  -webkit-animation-duration: 6000ms;
+  -webkit-animation-iteration-count: infinite;
 }
 
 .gray-phone {
@@ -149,132 +91,80 @@ body {
   position: absolute;
   top: 20px;
   right: -150px;
-  -webkit-animation-name: right_to_left, scan_ok, dissappear ; /* Safari 4.0 - 8.0 */
-  -webkit-animation-duration: 2s, 1s, 0.5s; /* Safari 4.0 - 8.0 */
-  animation-name: right_to_left, scan_ok, dissappear ;
-  animation-duration: 2s, 1s, 0.5s;
-  animation: right_to_left 2.0s forwards, scan_ok 1.0s forwards, dissappear 0.5s forwards ;
-  -webkit-animation: right_to_left 2.0s forwards, scan_ok 1.0s forwards, dissappear 0.5s forwards;
-  -webkit-animation-delay: 0s, 2.2s, 4s; /* Safari 4.0 - 8.0 */
-  animation-delay: 0s, 2.2s, 4s;
+  -webkit-animation-name: anim_2_gray_phone;
+  -webkit-animation-duration: 6000ms;
+  -webkit-animation-iteration-count: infinite;
 }
 
-// Animación movil naranja de izquierda a derecha
-
-@-webkit-keyframes left_to_right {
-  from {left: -150px;}
-  to {left: 126px;}
+.check-2 {
+  background-image: url(../img/check-mod.png);
+  background-size: cover;
+  width: 82px;
+  height: 82px;
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  opacity: 0;
+  z-index: 4;
+  -webkit-animation-name: anim_2_check;
+  -webkit-animation-duration: 6000ms;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-delay: 2s;
 }
 
-@keyframes left_to_right {
-  from {left: -150px;}
-  to {left: 126px;}
+// Keyframes Animacion #1
+
+@-webkit-keyframes anim_1_orange_phone {
+  0%    { left: -150px; background-image: url(../img/other/orange-phone.png); }
+  20%   { left: 126px; top: 0; background-image: url(../img/other/orange-phone.png); }
+  35%   { left: 126px; top: 12px; background-image: url(../img/other/orange-phone.png); }
+  40%   { left: 126px; top: 12px; background-image: url(../img/other/orange-phone.png); }
+  55%   { left: 126px; top: 12px; background-image: url(../img/other/orange-phone-ok-mod.png); }
+  75%   { opacity: 1; left: 126px; top: 12px; background-image: url(../img/other/orange-phone-ok-mod.png); }
+  100%  { opacity: 0; left: 126px; top: 12px; background-image: url(../img/other/orange-phone-ok-mod.png); }
 }
 
-// Animación enfocar qr
-
-@-webkit-keyframes focus {
-  from {top: 0px;}
-  to {top: 12px;}
+@-webkit-keyframes anim_1_gray_card {
+  0%    { opacity: 1; background-image: url(../img/other/gray-card-blurry-qr.png); }
+  10%   { opacity: 1; background-image: url(../img/other/gray-card-blurry-qr.png); }
+  30%   { opacity: 1; background-image: url(../img/other/gray-card-blurry-qr.png); }
+  55%   { opacity: 1; background-image: url(../img/other/gray-card.png) }
+  100%  { opacity: 0; }
 }
 
-@keyframes focus {
-  from {top: 0px;}
-  to {top: 12px;}
+@-webkit-keyframes anim_1_check {
+  0%    { opacity: 0; }
+  25%   { opacity: 1; }
+  50%   { opacity: 1; }
+  55%   { opacity: 0; }
+  100%  { opacity: 0; }
 }
 
-// Animación de OK telefono naranja
+// Keyframes Animación #2
 
-@-webkit-keyframes orange_scan_ok {
-  from {background-image: url(../img/other/orange-phone.png);}
-  to {background-image: url(../img/other/orange-phone-ok-mod.png);}
+@-webkit-keyframes anim_2_gray_phone {
+  0%    { right: -150px; background-image: url(../img/anim-2-mod-mod.png);}
+  20%   { right: 124px; background-image: url(../img/anim-2-mod-mod.png);}
+  30%   { right: 124px; background-image: url(../img/anim-2-mod-mod.png);}
+  35%   { right: 124px; background-image: url(../img/anim-ok-mod.png); }
+  50%   { opacity: 1; right: 124px; background-image: url(../img/anim-ok-mod.png); }
+  75%   { opacity: 0; right: 124px; background-image: url(../img/anim-ok-mod.png); }
+  100%  { opacity: 0; right: 124px; background-image: url(../img/anim-ok-mod.png); }
 }
 
-@keyframes orange_scan_ok {
-  from {background-image: url(../img/other/orange-phone.png);}
-  to {background-image: url(../img/other/orange-phone-ok-mod.png);}
+@-webkit-keyframes anim_2_orange_phone {
+  0%    { background-image: url(../img/anim-blurry.png); }
+  20%    { background-image: url(../img/anim-blurry.png); }
+  25%   { background-image: url(../img/anim-1.png); }
+  50%   { opacity: 1; background-image: url(../img/anim-1.png); }
+  60%   { opacity: 0; background-image: url(../img/anim-1.png); }
+  100%  { opacity: 0; background-image: url(../img/anim-1.png); }
 }
 
-// Animacion QR tarjeta griz nitido
-
-@-webkit-keyframes gray_qr {
-  from {background-image: url(../img/other/gray-card-blurry-qr.png);}
-  to {background-image: url(../img/other/gray-card.png);}
-}
-
-@keyframes gray_qr {
-  from {background-image: url(../img/other/gray-card-blurry-qr.png);}
-  to {background-image: url(../img/other/gray-card.png);}
-}
-
-// Animación movil griz de derecha a izquierda
-
-@-webkit-keyframes right_to_left {
-  from {right: -150px;}
-  to {right: 124px;}
-}
-
-@keyframes right_to_left {
-  from {right: -150px;}
-  to {right: 124px;}
-}
-
-// Animacion para remover el efecto blurry en el QR
-
-@-webkit-keyframes unblurry {
-  from {background-image: url(../img/anim-blurry.png);}
-  to {background-image: url(../img/anim-1.png);}
-}
-
-@keyframes unblurry {
-  from {background-image: url(../img/anim-blurry.png);}
-  to {background-image: url(../img/anim-1.png);}
-}
-
-// Animacion de OK
-
-@-webkit-keyframes scan_ok {
-  from {background-image: url(../img/anim-2-mod-mod.png);}
-  to {background-image: url(../img/anim-ok-mod.png);}
-}
-
-@keyframes scan_ok {
-  from {background-image: url(../img/anim-2-mod-mod.png);}
-  to {background-image: url(../img/anim-ok-mod.png);}
-}
-
-// Animacion para desaparecer elemento
-
-@-webkit-keyframes dissappear {
-  from {opacity: 1;}
-  to {opacity: 0;}
-}
-
-@keyframes dissappear {
-  from {opacity: 1;}
-  to {opacity: 0;}
-}
-
-// Animacion para mostrar telefono naranja con check
-
-@-webkit-keyframes orange_phone_check {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}
-
-@keyframes orange_phone_check {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}
-
-// Animacion para mostrar Check.
-
-@-webkit-keyframes check_appear {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}
-
-@keyframes check_appear {
-  from {opacity: 0;}
-  to {opacity: 1;}
+@-webkit-keyframes anim_2_check {
+  0%    { opacity: 0; }
+  25%   { opacity: 1; }
+  50%   { opacity: 1; }
+  55%   { opacity: 0; }
+  100%  { opacity: 0; }
 }
