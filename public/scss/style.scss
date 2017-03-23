@@ -21,22 +21,23 @@ body {
 }
 
 .check {
-  background-image: url(../img/check.png);
+  background-image: url(../img/check-mod.png);
   background-size: cover;
-  width: 65px;
-  height: 65px;
+  width: 82px;
+  height: 82px;
   position: absolute;
-  top: 40%;
-  left: 42%;
+  top: 33%;
+  left: 40%;
   opacity: 0;
-  -webkit-animation-name: check_appear; /* Safari 4.0 - 8.0 */
-  -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
-  animation-name: check_appear;
-  animation-duration: 1s;
-  animation: check_appear 1s forwards;
-  -webkit-animation: check_appear 1s forwards;
-  -webkit-animation-delay: 4s; /* Safari 4.0 - 8.0 */
-  animation-delay: 4s;
+  z-index: 4;
+  -webkit-animation-name: check_appear, dissappear; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 1s, 1s; /* Safari 4.0 - 8.0 */
+  animation-name: check_appear, dissappear;
+  animation-duration: 1s, 1s;
+  animation: check_appear 1s forwards, dissappear 1s forwards;
+  -webkit-animation: check_appear 1s forwards, dissappear 1s forwards;
+  -webkit-animation-delay: 4s, 6s; /* Safari 4.0 - 8.0 */
+  animation-delay: 4s, 6s;
 }
 
 // Animación #1
@@ -52,13 +53,13 @@ body {
   margin: 0 auto;
   z-index: 1;
   -webkit-animation-name: gray_qr, dissappear; /* Safari 4.0 - 8.0 */
-  -webkit-animation-duration: 0.5s, 1s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 0.5s, 0.5s; /* Safari 4.0 - 8.0 */
   animation-name: gray_qr, dissappear;
-  animation-duration: 0.5s, 1s;
-  animation: gray_qr 0.5s forwards, dissappear 1s forwards;
-  -webkit-animation: gray_qr 0.5s forwards, dissappear 1s forwards;
-  -webkit-animation-delay: 2.5s, 4s; /* Safari 4.0 - 8.0 */
-  animation-delay: 2.5s, 4s;
+  animation-duration: 0.5s, 0.5s;
+  animation: gray_qr 0.5s forwards, dissappear 0.5s forwards;
+  -webkit-animation: gray_qr 0.5s forwards, dissappear 0.5s forwards;
+  -webkit-animation-delay: 2.5s, 5s; /* Safari 4.0 - 8.0 */
+  animation-delay: 2.5s, 5s;
 }
 
 .orange-phone {
@@ -72,11 +73,30 @@ body {
   -webkit-animation-name: left_to_right, focus, orange_scan_ok, dissappear; /* Safari 4.0 - 8.0 */
   -webkit-animation-duration: 2s, 1s, 0.5s, 1s; /* Safari 4.0 - 8.0 */
   animation-name: left_to_right, focus, orange_scan_ok, dissappear;
-  animation-duration: 2s, 1s 0.5s, 1s;
+  animation-duration: 2s, 1s, 0.5s, 1s;
   animation: unblurry 2s forwards, focus 1s forwards, orange_scan_ok 0.5s forwards, dissappear 1s forwards;
   -webkit-animation: left_to_right 2s forwards, focus 1s forwards, orange_scan_ok 0.5s forwards, dissappear 1s forwards;
-  -webkit-animation-delay: 0s, 2s, 3s, 4s; /* Safari 4.0 - 8.0 */
-  animation-delay: 0s, 2s, 3s, 4s;
+  -webkit-animation-delay: 0s, 2s, 3s, 5s; /* Safari 4.0 - 8.0 */
+  animation-delay: 0s, 2s, 3s, 5s;
+}
+
+.orange-phone-check {
+  background-image: url(../img/other/orange-phone-check.png);
+  width: 150px;
+  height: 248px;
+  position: absolute;
+  left: 126px;
+  z-index: 3;
+  top: 42px;
+  opacity: 0;
+  -webkit-animation-name: orange_phone_check, dissappear; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 0.5s, 0.5s; /* Safari 4.0 - 8.0 */
+  animation-name: orange_phone_check, dissappear;
+  animation-duration: 0.5s, 0.5s;
+  animation: orange_phone_check 0.5s forwards, dissappear 0.5s forwards;
+  -webkit-animation: orange_phone_check 0.5s forwards, dissappear 0.5s forwards;
+  -webkit-animation-delay: 4s, 5s; /* Safari 4.0 - 8.0 */
+  animation-delay: 4s, 5s;
 }
 
 // Animación #2
@@ -109,12 +129,12 @@ body {
   position: absolute;
   top: 20px;
   right: -150px;
-  -webkit-animation-name: right_to_left, scan-ok, dissapear; /* Safari 4.0 - 8.0 */
+  -webkit-animation-name: right_to_left, scan_ok, dissapear; /* Safari 4.0 - 8.0 */
   -webkit-animation-duration: 2s, 1s, 1s; /* Safari 4.0 - 8.0 */
-  animation-name: right_to_left, scan-ok, dissappear;
+  animation-name: right_to_left, scan_ok, dissappear;
   animation-duration: 2s, 1s, 1s;
-  animation: right_to_left 2.0s forwards, scan-ok 1.0s forwards, dissappear 1s forwards ;
-  -webkit-animation: right_to_left 2.0s forwards, scan-ok 1.0s forwards, dissappear 1s forwards;
+  animation: right_to_left 2.0s forwards, scan_ok 1.0s forwards, dissappear 1s forwards ;
+  -webkit-animation: right_to_left 2.0s forwards, scan_ok 1.0s forwards, dissappear 1s forwards;
   -webkit-animation-delay: 0s, 2.2s, 4s; /* Safari 4.0 - 8.0 */
   animation-delay: 0s, 2.2s, 4s;
 }
@@ -193,39 +213,41 @@ body {
 
 // Animacion de OK
 
-@-webkit-keyframes scan-ok {
+@-webkit-keyframes scan_ok {
   from {background-image: url(../img/anim-2-mod-mod.png);}
   to {background-image: url(../img/anim-ok-mod.png);}
 }
 
-@keyframes scan-ok {
+@keyframes scan_ok {
   from {background-image: url(../img/anim-2-mod-mod.png);}
   to {background-image: url(../img/anim-ok-mod.png);}
 }
 
-// Animation for Dissappear
+// Animacion para desaparecer elemento
 
 @-webkit-keyframes dissappear {
-  from {background-image: inherit;}
-  to {background-image: none;}
+  from {opacity: 1;}
+  to {opacity: 0;}
 }
 
 @keyframes dissappear {
-  from {background-image: inherit;}
-  to {background-image: none;}
+  from {opacity: 1;}
+  to {opacity: 0;}
 }
 
-// Animation for Check
+// Animacion para mostrar telefono naranja con check
 
-// @-webkit-keyframes check_appear {
-//   from {background-image: none;}
-//   to {background-image: url(../img/check.png);}
-// }
+@-webkit-keyframes orange_phone_check {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
 
-// @keyframes check_appear {
-//   from {background-image: none;}
-//   to {background-image: url(../img/check.png);}
-// }
+@keyframes orange_phone_check {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+// Animacion para mostrar Check.
 
 @-webkit-keyframes check_appear {
   from {opacity: 0;}
