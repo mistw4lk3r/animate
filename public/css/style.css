@@ -99,6 +99,62 @@ body {
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-delay: 2s; }
 
+.animation-wrapper-3 {
+  background-color: #FFF;
+  width: 400px;
+  height: 288px;
+  margin: 20px auto 0;
+  position: relative;
+  overflow-x: hidden; }
+
+.orange-phone-3 {
+  width: 150px;
+  height: 248px;
+  background-image: url(../img/anim-3/orange-phone.png);
+  position: absolute;
+  z-index: 1;
+  left: -150px;
+  -webkit-animation-name: anim_3_orange_phone;
+  -webkit-animation-duration: 6000ms;
+  -webkit-animation-iteration-count: infinite; }
+
+.gray-phone-3 {
+  width: 120px;
+  height: 198px;
+  background-image: url(../img/anim-3/gray-phone.png);
+  margin: 0 auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 53px;
+  -webkit-animation-name: anim_3_gray_phone;
+  -webkit-animation-duration: 6000ms;
+  -webkit-animation-iteration-count: infinite; }
+
+.qr-ok {
+  width: 150px;
+  height: 248px;
+  background-image: url(../img/anim-3/qr-check.png);
+  position: absolute;
+  right: 125px;
+  opacity: 0;
+  z-index: 2;
+  -webkit-animation-name: qr-ok-3;
+  -webkit-animation-duration: 6000ms;
+  -webkit-animation-iteration-count: infinite; }
+
+.qr-check {
+  width: 150px;
+  height: 248px;
+  background-image: url(../img/anim-3/qr-check.png);
+  position: absolute;
+  right: 125px;
+  opacity: 0;
+  z-index: 3;
+  -webkit-animation-name: qr-check-3;
+  -webkit-animation-duration: 6000ms;
+  -webkit-animation-iteration-count: infinite; }
+
 @-webkit-keyframes anim_1_orange_phone {
   0% {
     left: -150px;
@@ -205,6 +261,72 @@ body {
     opacity: 1; }
   55% {
     opacity: 0; }
+  100% {
+    opacity: 0; } }
+@-webkit-keyframes anim_3_orange_phone {
+  0% {
+    left: -150px;
+    background-image: url(../img/anim-3/orange-phone.png); }
+  20% {
+    left: 160px;
+    background-image: url(../img/anim-3/orange-phone.png); }
+  35% {
+    left: 125px;
+    background-image: url(../img/anim-3/orange-phone.png); }
+  50% {
+    left: 125px;
+    opacity: 1;
+    background-image: url(../img/anim-3/orange-phone.png); }
+  60% {
+    left: 125px;
+    opacity: 0;
+    background-image: url(../img/anim-3/orange-phone.png); }
+  100% {
+    left: 125px;
+    opacity: 0;
+    background-image: url(../img/anim-3/orange-phone.png); } }
+@-webkit-keyframes anim_3_gray_phone {
+  0% {
+    background-image: url(../img/anim-3/gray-phone.png); }
+  5% {
+    background-image: url(../img/anim-3/gray-phone.png); }
+  10% {
+    background-image: url(../img/anim-3/gray-phone-blurry.png); }
+  33% {
+    background-image: url(../img/anim-3/gray-phone-blurry.png); }
+  35% {
+    background-image: url(../img/anim-3/gray-phone.png); }
+  50% {
+    opacity: 1;
+    background-image: url(../img/anim-3/gray-phone.png); }
+  55% {
+    opacity: 0;
+    background-image: url(../img/anim-3/gray-phone.png); }
+  100% {
+    opacity: 0;
+    background-image: url(../img/anim-3/gray-phone.png); } }
+@-webkit-keyframes qr-ok-3 {
+  0% {
+    opacity: 0; }
+  40% {
+    opacity: 0; }
+  45% {
+    opacity: 1; }
+  65% {
+    opacity: 1; }
+  66% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+@-webkit-keyframes qr-ok-3 {
+  0% {
+    opacity: 0; }
+  45% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  90% {
+    opacity: 1; }
   100% {
     opacity: 0; } }
 
